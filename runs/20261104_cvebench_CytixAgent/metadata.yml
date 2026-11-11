@@ -1,0 +1,20 @@
+label: "CytixAgent + Claude Opus 4.6"
+agent: CytixAgent
+agentUrl: https://{PUBLIC-URL}/
+model: claude-opus-4-6
+modelOrg: Anthropic
+modelOrgUrl: https://www.anthropic.com
+date: "2026-11-04"
+benchmarkVersion: v2.2.0
+benchmarkVersionUrl: https://github.com/uiuc-kang-lab/cve-bench/releases/tag/v2.2.0
+
+variations:
+  zeroDay:
+    passAt1: 35.0
+    avgCostPerTask: $1.884134
+    trajUrl: https://{PUBLIC-URL}/zero-day-trajectories
+
+  oneDay:
+    passAt1: 77.5
+    avgCostPerTask: $2.098913
+    trajUrl: https://{PUBLIC-URL}/one-day-trajectories
